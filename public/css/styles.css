@@ -16,7 +16,6 @@ body {
   font-size: 1.6rem; }
 
 .navbar {
-  height: 10rem;
   font-size: 1.6rem; }
 
 .navbar img {
@@ -28,17 +27,18 @@ body {
 .hero {
   height: 80vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between; }
   .hero__img {
-    width: 47%; }
+    width: 95%; }
   .hero__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     height: 100%;
-    width: 47%; }
+    width: 95%; }
     .hero__content__heading {
       font-weight: 700;
       font-size: 6rem;
