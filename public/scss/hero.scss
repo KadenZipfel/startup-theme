@@ -1,5 +1,5 @@
 .hero {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -21,6 +21,11 @@
       font-weight: 700;
       font-size: 6rem;
       margin-bottom: 2.4rem;
+
+      @media(max-width: 768px) {
+        font-size: 4rem;
+        margin-bottom: 0;
+      }
     }
 
     &__subheading {

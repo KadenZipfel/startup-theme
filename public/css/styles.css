@@ -25,7 +25,7 @@ body {
   font-size: 1.6rem; }
 
 .hero {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -43,7 +43,71 @@ body {
       font-weight: 700;
       font-size: 6rem;
       margin-bottom: 2.4rem; }
+      @media (max-width: 768px) {
+        .hero__content__heading {
+          font-size: 4rem;
+          margin-bottom: 0; } }
     .hero__content__subheading {
       font-weight: 400;
       font-size: 2.4rem;
       margin-bottom: 2.4rem; }
+
+.what {
+  height: 85vh; }
+  @media (max-width: 768px) {
+    .what {
+      margin-top: 3rem; } }
+  .what__header {
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .what__header__title {
+      font-size: 6rem;
+      font-weight: 300; }
+      @media (max-width: 768px) {
+        .what__header__title {
+          font-size: 4rem; } }
+  .what__body {
+    background: #74d5dd;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgba(116, 213, 221, 0.7), rgba(102, 208, 217, 0.7));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgba(116, 213, 221, 0.7), rgba(102, 208, 217, 0.7));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (max-width: 768px) {
+      .what__body {
+        flex-direction: column;
+        height: 120vh;
+        -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%); } }
+    .what__body__card {
+      width: 95%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto; }
+      @media (max-width: 768px) {
+        .what__body__card {
+          height: 35vh; } }
+      .what__body__card__icon {
+        font-size: 5rem; }
+      .what__body__card__heading {
+        font-size: 4.5rem;
+        font-weight: 300; }
+        @media (max-width: 768px) {
+          .what__body__card__heading {
+            font-size: 2.8rem; } }
+      .what__body__card__text {
+        font-size: 1.6rem;
+        text-align: center; }
