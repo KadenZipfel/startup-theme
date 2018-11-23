@@ -1,0 +1,35 @@
+.cta {
+
+  @media(max-width: 768px) {
+    margin-top: 50vh;
+  }
+
+  &__header {
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      font-size: 6rem;
+      font-weight: 300;
+      margin-bottom: 0;
+
+      @media(max-width: 768px) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__body {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cta .btn {
+  font-size: 3rem;
+}
