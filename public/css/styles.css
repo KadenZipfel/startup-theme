@@ -9,7 +9,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.btn {
+  font-size: 1.6rem; }
 
 .navbar {
   height: 10rem;
@@ -20,3 +24,26 @@ body {
 
 .navbar .btn {
   font-size: 1.6rem; }
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .hero__img {
+    width: 47%; }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 47%; }
+    .hero__content__heading {
+      font-weight: 700;
+      font-size: 6rem;
+      margin-bottom: 2.4rem; }
+    .hero__content__subheading {
+      font-weight: 400;
+      font-size: 2.4rem;
+      margin-bottom: 2.4rem; }
